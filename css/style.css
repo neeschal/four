@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  color: #a3a5ae;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #4c4e61;
+}
+
+p {
+  line-height: 1.5;
+}
+
+#main-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.container,
+.cards-container {
+  margin: 0 2rem;
+}
+
+header {
+  margin: 4rem 0;
+}
+
+header h2 {
+  color: #a3a5ae;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+header h2 span {
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+header p {
+  text-align: center;
+}
+
+.card {
+  -webkit-box-shadow: 4px 5px 15px #a3a5ae;
+          box-shadow: 4px 5px 15px #a3a5ae;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  position: relative;
+  height: 170px;
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
+
+.card img {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+
+.supervisor {
+  border-top: 4px solid #45d3d3;
+}
+
+.team {
+  border-top: 4px solid #ea5353;
+}
+
+.karma {
+  border-top: 4px solid #fcaf4a;
+}
+
+.calculator {
+  border-top: 4px solid #549ef2;
+}
+
+@media screen and (min-width: 1200px) {
+  #main-container {
+    min-width: 1200px;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .container header {
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+  .container header h2 {
+    font-size: 25px;
+  }
+  .cards-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4 1fr);
+  }
+  .supervisor {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+    margin: 1rem;
+  }
+  .team {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    margin: 1rem;
+  }
+  .karma {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    grid-row: 3/6;
+    margin: 1rem;
+  }
+  .calculator {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+    margin: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
